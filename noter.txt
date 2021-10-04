@@ -1,0 +1,69 @@
+Build in modules
+
+Kommer med installationen: import sys
+
+OS modules
+operativ system module
+
+Hvordan importerer man moduler?
+1. import sys --> overordnet mådem man importerer det hele her
+2. from sys import argv --> importere kun det specifikke af modulet
+
+Hvordan gør man brug af det?
+    - lav en python/txt fil i editor med følgende:
+    
+    import sys
+
+    def greeting(x):
+        print(f'Hello is: {x}')
+
+    greeting(sys.argv)
+
+Hvis man bruger måde 2. skal man ikke have sys med i greeting()
+
+-------- OS Module ---------
+
+Ny fil: operating_system.py
+
+Indhold:
+
+import os
+
+print(os.listdir()) --> laver det samme som ls
+
+os.mkdir('Test') --> opretter en mappe Test
+os.chdir('Test') --> det samme som cd
+
+open('Script.py', 'w') --> opretter ny fil
+
+print(os.listdir())
+
+-------- Subprocesses ---------
+
+import subprocess
+
+subprocess.run() --> kan kører terminalkommandoer
+print(subprocess.run(['pwd']))
+print(subprocess.run(['touch', 'blabla.py']))
+print(subprocess.run(['ls']))
+print(subprocess.run(['rm', 'blabla.py']))
+print(subprocess.run(['ls']))
+
+OBS. overstående printer også returtypen
+
+subprocess.run(['git', 'clone', 'url'en'])
+
+overstående moduler kommer med, når man installere python
+man skal blot aktivere dem med import 
+
+---------- Request module (3. party modules) ---------
+
+pypi.org --> sted man kan finde moduler
+
+Når man skal installere et 3. parts modul:
+
+skriv: pip install og navnet på det modul man vil installere
+
+-------- Download images --------
+
+Se Claus' noter
