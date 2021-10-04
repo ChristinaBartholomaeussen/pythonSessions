@@ -67,3 +67,17 @@ skriv: pip install og navnet på det modul man vil installere
 -------- Download images --------
 
 Se Claus' noter
+
+_____________________________________________________________
+Session 5
+
+requirements.txt --> indeholder dependencies tilsvarende til package.json i node
+
+NAVN      VERSION
+requests==2.26.0
+
+For at installere overstående skriv:
+    pip install -r navnet-på-tekstfilen
+
+Tag requiremets og indsæt dem i filen med requirements
+    pip freeze > navnet-påtekstfilen
