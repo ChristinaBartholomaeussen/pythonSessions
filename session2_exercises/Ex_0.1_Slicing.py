@@ -2,6 +2,8 @@
 words = ['Hello', 'World', 'Huston', 'we', 'are', 'here'] 
 print(words[0:5])
 
+
+
 #['Hello', 'World', 'Huston', 'we', 'are', 'here'] -> ['Hello', 'World']
 print(words[0:2])
 
